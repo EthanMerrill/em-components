@@ -1,6 +1,5 @@
 // src/components/Card.tsx
 import React from 'react';
-import svg from 'https://upload.wikimedia.org/wikipedia/commons/7/7a/Bluesky_Logo.svg'
 
 export interface SignatureFooterProps {
     backgroundColor: string;
@@ -62,3 +61,4 @@ const SignatureFooter: React.FC<SignatureFooterProps> = ({ backgroundColor, font
 };
 
 export default SignatureFooter;
+
