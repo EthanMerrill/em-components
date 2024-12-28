@@ -1,6 +1,6 @@
 {
   "name": "ethan-components",
-  "version": "1.0.1",
+  "version": "1.0.8",
   "private": false,
   "description": "a collection of components Ethan Merrill uses across his web projects.",
   "keywords": [
@@ -16,12 +16,14 @@
     "type": "git",
     "url": "git+https://github.com/EthanMerrill/em-components.git"
   },
-  "main": "./dist/em-components.umd.js",
-  "module": "./dist/em-components.es.js",
+  "main": "./dist/ethan-components.umd.js",
+  "module": "./dist/ethan-components.es.js",
+  "types": "dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/em-components.es.js",
-      "require": "./dist/em-components.umd.js"
+      "types": "./dist/ethan-components.d.ts",
+      "import": "./dist/ethan-components.es.js",
+      "require": "./dist/ethan-components.umd.js"
     }
   },
   "scripts": {
@@ -49,6 +51,7 @@
     "react": "^19.0.0",
     "typescript": "~5.6.2",
     "typescript-eslint": "^8.18.2",
-    "vite": "^6.0.5"
+    "vite": "^6.0.5",
+    "vite-plugin-dts": "^4.4.0"
   }
 }
